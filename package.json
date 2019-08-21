@@ -1,0 +1,19 @@
+{
+  "name": "pika-plugin-clean-dist-src",
+  "description": "remove dist-src and correct package.json",
+  "version": "0.1.0",
+  "files": [
+    "src/"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yiminghe/pika-plugin-clean-dist-src"
+  },
+  "dependencies": {
+    "rimraf": "^3.0.0"
+  },
+  "scripts": {
+    "pub": "npm publish && git push"
+  },
+  "main": "src/index.js"
+}
