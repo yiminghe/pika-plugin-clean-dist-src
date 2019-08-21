@@ -5,6 +5,6 @@ exports.manifest = (m) => {
 }
 
 exports.afterBuild = ({ out, reporter }) => {
-  rimraf(`${out}/dist-src`);
+  rimraf.sync(`${out}/dist-src`);
   reporter.info(`clean dist-src`);
 };
