@@ -2,6 +2,7 @@ const rimraf = require('rimraf');
 
 exports.manifest = (m) => {
   delete m.esnext;
+  delete m.source;
 }
 
 exports.afterBuild = ({ out, reporter }) => {
