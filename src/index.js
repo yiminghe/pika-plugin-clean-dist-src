@@ -1,6 +1,7 @@
 const rimraf = require('rimraf');
 
 exports.manifest = (m) => {
+  delete m.files;
   delete m.esnext;
   delete m.source;
 }
